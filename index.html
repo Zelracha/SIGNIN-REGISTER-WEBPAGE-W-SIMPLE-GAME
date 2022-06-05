@@ -1,0 +1,56 @@
+<!Doctype html>
+ <html>
+   <head> <title> Cool Webpage </title>
+
+   <meta name="viewport" content="width=device-width, initial scale=1.0">
+     <link rel="icon" href="https://static.wikia.nocookie.net/megamitensei/images/2/28/Phantom_Thieves_Logo.png/revision/latest?cb=20170528120634" type="image/x-icon">
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   
+   <body>
+     <header> 
+      <div class="title"> 
+        <a href="#logo">BE ODDINARY </a>  
+        <a href="sors.html"> GAMES </a>
+      </div>
+     </header>
+     
+     <div class="main">
+       <button class="registerbtn" onclick="registerForm()"> Register </button>
+       <h1 class="text1"> Sign-in </h1>
+       <label for="email"> Email: </label>
+       <input class="email" type="text" placeholder="Enter email" required>
+       <label for="password"> Password: </label>
+       <input class="password" type="password" placeholder="Enter Password" required>
+       <button class="enterbtn" onclick="logIn()"> Login </button> 
+     </div>
+   </body>
+   
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+      function registerForm(){
+      document.getElementsByClassName('registerbtn')[0].innerHTML = "Login";
+      document.getElementsByClassName('text1')[0].innerHTML = "BE ODDINARY";
+      document.getElementsByClassName('email')[0].placeholder = "Enter your email";
+      document.getElementsByClassName('password')[0].placeholder = "Enter your password";
+       document.getElementsByClassName('enterbtn')[0].innerHTML  = "Register";
+      }
+      
+      function logIn(){
+              document.getElementsByClassName('registerbtn')[0].innerHTML = "Register";
+      document.getElementsByClassName('text1')[0].innerHTML = "Sign-in";
+      document.getElementsByClassName('email')[0].placeholder = "Email:";
+      document.getElementsByClassName('password')[0].placeholder = "Password:";
+       document.getElementsByClassName('enterbtn')[0].innerHTML  = "Login";
+        
+        Swal.fire({
+        position: 'mid',
+        icon: 'success',
+        title: 'YOU ARE NOW ODDINARY',
+        showConfirmButton: false,
+        timer: 1500
+      })
+        }
+    </script>
+</html>

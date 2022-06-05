@@ -1,0 +1,104 @@
+*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+  }
+
+body {
+  background-image:url(https://lovelytab.com/wp-content/uploads/2019/01/Tumblr-Aesthetic-Wallpapers-Free-1024x576.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DCD311;
+  padding: 20px 5%;
+}
+
+.title a {
+  font-family: Lucida Handwriting, Cursive;
+  text-decoration: none;
+  color: #B51414;
+  font-size: 38px;
+}
+
+.text1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.main {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 30%;;
+  display: flex;
+  flex-wrap: wrap;
+	flex-direction: column;
+  padding: 70px 20px;
+  background-color: rgba(0%, 0%, 0%, 0.5);
+  border-radius: 10px;
+  
+}
+
+label {
+  text-align: left;
+  float: left;
+  font-size: 23px;
+}
+
+input {
+		width: 90%;
+    margin: 15px;
+		padding:  8px 8px;
+		border:  none;
+		border-radius: 5px;
+}
+
+.enterbtn {
+  transition: all .2s ease-in-out; 
+  border: none;
+  background-color: rgba(0%, 0%, 0%, 0.5);
+  padding: 15px;
+  font-size: 15px;
+  color: #B51414;
+  border-radius: 7px;
+  
+}
+
+button: hover {
+  transition: all .2s ease-in-out; 
+  cursor: pointer;
+  transform: scale(1.1);  
+  color: red;
+}
+
+.registerbtn {
+  transition: all .2s ease-in-out; 
+  border: none;
+  background-color: rgba(0%, 0%, 0%, 0.3);
+  padding: 15px;
+  color: #B51414;
+  border-radius: 7px;
+  position: absolute;
+  top: 8.5%;
+	right: 0%;
+	transform: translate(-50%, -50%);
+}
+
+.aboutme {
+  transition: all .2s ease-in-out; 
+  border: none;
+  background-color: rgba(0%, 0%, 0%, 0.3);
+  color: #B51414;
+
+}
+
